@@ -1,5 +1,5 @@
 /* TriangleModel
- * holds the data shown in the view
+ * Manages the data received from the input form (side A, side B, side C). 
  * 
  */
 

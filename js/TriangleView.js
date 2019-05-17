@@ -1,5 +1,5 @@
 /* TriangleView
- * updates the DOM
+ * Updates the UI with feedback message (e.g. Triangle is scalene) as well as error message if input is malformed.
  */
 
 function TriangleView() {

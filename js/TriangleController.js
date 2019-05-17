@@ -1,6 +1,5 @@
 /* TriangleController
- * defines how to handle events from input form
- * updates the model 
+ * Handles user-generated events from the UI. Validate input. Updates the model.
  */
  
 function TriangleController(triangleView, triangleModel)
