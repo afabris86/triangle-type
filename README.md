@@ -7,5 +7,9 @@ The app uses the MVC (model-view-controller) architectural pattern.
 ## Architectural components
 
 * TriangleController
-* TriangleView
+  Handles user-generated events from the UI. Validate input. Updates the model
 * TriangleModel
+  Manages the data received from the input form (side A, side B, side C).
+* TriangleView
+  Updates the UI with feedback message (e.g. Triangle is scalene) as well as error message if input is malformed.
+
