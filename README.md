@@ -1,9 +1,9 @@
 # Triangle-type
 
-A JavaScript program that will determine the type of a triangle. It should take the lengths of the triangle's three sides as input, and return whether the triangle is equilateral, isosceles or scalene.
+A JavaScript program that will determine the type of a triangle. It takes the lengths of the triangle's three sides as input from UI, and return whether the triangle is equilateral, isosceles or scalene.
 
 The app uses the MVC (model-view-controller) architectural pattern.
-UI is built using [Tradeshift UI](https://github.com/Tradeshift/tradeshift-ui)
+UI components are based on [Tradeshift UI](https://github.com/Tradeshift/tradeshift-ui) components.
 
 ## Installation
 Close this repository
