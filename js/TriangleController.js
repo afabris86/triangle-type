@@ -149,16 +149,6 @@ function TriangleController(triangleView, triangleModel)
     return (sideA == sideB || sideB == sideC || sideA == sideC);
   };
 
-  return {
-    initialize : self.initialize,
-    isValidSide : self.isValidSide,
-    isValidTriangle : self.isValidTriangle,
-    isEquilateral :self.isEquilateral,
-    isIsosceles : self.isIsosceles,
-    model : self.model
-  };
 };
 
-
-module.exports = TriangleController();
 

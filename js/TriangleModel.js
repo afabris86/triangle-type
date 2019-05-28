@@ -57,5 +57,3 @@ function TriangleModel()
   };
 
 };
-
-module.exports = TriangleModel();

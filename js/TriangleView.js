@@ -23,10 +23,10 @@ function TriangleView() {
   
   this.labelC = this.inputC.parentNode;
 
-  this.errorList = document.getElementsByClassName("ts-errors")[0];
-  this.errorList.style.visibility = "hidden";
+  /*this.errorList = document.getElementsByClassName("ts-errors")[0];
+  this.errorList.style.visibility = "hidden";*/
 
-  this.inputSubmit = this.form.getElementsByTagName("input")[3];
+  this.inputSubmit = this.form.getElementsByTagName("button")[0];
   this.inputSubmit.disabled = true;
 
   this.feedbackPanel = document.getElementById("feedbackMessage");
@@ -48,7 +48,7 @@ function TriangleView() {
 
   this.clearErrorList = function ()
   {
-    self.errorList.innerHTML = "";
+    //self.errorList.innerHTML = "";
     self.labelA.classList.remove("ts-error");
     self.labelB.classList.remove("ts-error");
     self.labelC.classList.remove("ts-error");
@@ -59,7 +59,7 @@ function TriangleView() {
     var dd = document.createElement("dd");
     dd.innerHTML = message;
 
-    self.errorList.appendChild(dd);
+    //self.errorList.appendChild(dd);
   }
 
   this.render = function (model)
@@ -69,7 +69,7 @@ function TriangleView() {
 
     if (model.output.formHasErrors)
     {
-      self.errorList.style.visibility = "visible";
+      //self.errorList.style.visibility = "visible";
 
       if (model.output.inputErrorA !== "")
       {
@@ -91,7 +91,7 @@ function TriangleView() {
     }
     else
     {
-      self.errorList.style.visibility = "hidden";
+      //self.errorList.style.visibility = "hidden";
     }
 
     if (model.output.submitShouldBeDisabled === true)
@@ -106,5 +106,3 @@ function TriangleView() {
   };
 
 };
-
-module.exports = TriangleView();
